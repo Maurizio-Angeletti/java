@@ -69,7 +69,7 @@ public class Switch {
 
 
         // es 1:
-        System.out.println("esercizio 1: \n");
+        System.out.println("\nesercizio 1:");
         char firstLetter = 'C';
         char secondLetter = 'A';
         char thirdLetter = 'R';
@@ -79,7 +79,7 @@ public class Switch {
         convertToNatoPhoneticAlphabet(thirdLetter);
 
         // es 2:
-        System.out.println("esercizio 2: \n");
+        System.out.println("\nesercizio 2:");
         printDayOfWeek(2);
 
     }
