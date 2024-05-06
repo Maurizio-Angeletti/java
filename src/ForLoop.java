@@ -23,6 +23,27 @@ public class ForLoop {
         System.out.println("\n es 1:");
         arePrime(1,1000);
 
+        //es 2
+        System.out.println("\n es 2:");
+
+        int counter =0 ;
+        int sum = 0;
+        for (int i = 1; counter < 5 && i <= 1000; i++){
+
+            if (i % 3 == 0 && i % 5 == 0){
+                sum += i;
+                System.out.println(i);
+                counter++;
+            }
+
+        }
+        System.out.println("sum = " + sum);
+
+        //es 3
+        System.out.println("\n es 3:");
+
+        System.out.println(sumOdd(1,11));
+
     }
 
     public static double calculateInterest(double amount, double interestRate){
@@ -56,5 +77,33 @@ public class ForLoop {
                 break;
             }
         }
+    }
+
+    public static boolean isOdd(int number){
+
+        if (number > 0){
+            if ( number % 2 == 0 ){
+                return false;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public static int sumOdd(int start, int end){
+
+        if(end >= start && start > 0 && end > 0){
+            int sum = 0;
+            for(int i = start; i <= end; i++){
+                if (isOdd(i)) {
+                    sum+=i;
+
+                }
+            }
+            return sum;
+
+        }
+        int sum = -1;
+        return sum;
     }
 }
