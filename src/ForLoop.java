@@ -21,6 +21,7 @@ public class ForLoop {
         }
         // es 1
         System.out.println("\n es 1:");
+        System.out.println(isPrime(3));
         arePrime(1,1000);
 
         //es 2
@@ -43,7 +44,6 @@ public class ForLoop {
         System.out.println("\n es 3:");
 
         System.out.println(sumOdd(1,11));
-
     }
 
     public static double calculateInterest(double amount, double interestRate){
