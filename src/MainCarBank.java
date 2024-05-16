@@ -1,4 +1,4 @@
-public class Main {
+public class MainCarBank {
 
     public static void main(String[] args) {
         //per creare un oggetto dobbiamo usare new con il nome della classe ce vogliamo usare come "stampino"
@@ -34,6 +34,8 @@ public class Main {
         System.out.println(bankAccountOne.getAccountBalance());
 
         bankAccountOne.withdrawFunds(15000);
+        bankAccountOne.setBankName("nome banca 1");
+        bankAccountOne.printBankName();
 
 
         System.out.println("\nbank account 2:");
@@ -45,5 +47,8 @@ public class Main {
         BankAccount bankAccountThree = new BankAccount("Caio Sempronio",30000);//in questo caso passiamo solo due argomenti che corrispondono a quelli che abbiamo passato nel costruttore a due parametri, in questo modo possiamo settare solo gli argomenti passati mentre gli altri attributi avranno valore default che abbiamo scelto nel costruttore a due parametri.
 
         System.out.println(bankAccountThree.getCustomerName() + "\n" + bankAccountThree.getAccountBalance() + "\n" + bankAccountThree.getAccountNumber() + "\n" + bankAccountThree.getPhoneNumber());
+        bankAccountThree.setBankName("nome banca 3");
+        bankAccountOne.printBankName();
+        bankAccountThree.printBankName();
     }
 }

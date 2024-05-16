@@ -1,5 +1,5 @@
 public class BankAccount {
-
+    private static String BankName;//ogni istanza della classe condivide la stessa variabile, infatti se viene modificata in un'istanza anche le altre istanze vedranno la modifica,
     private String accountNumber;
     private double accountBalance;
     private String customerName;
@@ -84,6 +84,13 @@ public class BankAccount {
             System.out.println("you cannot withdraw more than " + this.accountBalance);
         }
 
+    }
+
+    public void setBankName(String BankName){
+        BankAccount.BankName = BankName;
+    }
+    public void printBankName(){
+        System.out.println("Bank name = " + BankAccount.BankName);
     }
 }
 
